@@ -1,0 +1,5 @@
+#!/bin/bash
+for var in "$@"
+do
+(cat ~/dbauth; echo "$var") | ~/.nvm/versions/node/v16.20.2/bin/node ~/dropbox/upload.js
+done
